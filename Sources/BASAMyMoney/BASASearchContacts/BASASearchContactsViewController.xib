@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BASASearchContactsViewController" customModule="BASASearchContacts" customModuleProvider="target">
+            <connections>
+                <outlet property="searchContacts" destination="nyK-V0-c5w" id="HPl-4j-uzi"/>
+                <outlet property="tableContacts" destination="Uay-kJ-65D" id="ckl-gb-5tM"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A otra persona" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6cL-uj-yNI">
+                    <rect key="frame" x="20" y="107" width="151" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleAspectFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Uay-kJ-65D">
+                    <rect key="frame" x="0.0" y="144" width="414" height="718"/>
+                </tableView>
+                <searchBar contentMode="redraw" searchBarStyle="minimal" translatesAutoresizingMaskIntoConstraints="NO" id="nyK-V0-c5w">
+                    <rect key="frame" x="49" y="44" width="355" height="56"/>
+                    <textInputTraits key="textInputTraits"/>
+                </searchBar>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LtD-6H-Ucb">
+                    <rect key="frame" x="22" y="55" width="24" height="27"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                    <color key="tintColor" systemColor="labelColor"/>
+                    <state key="normal">
+                        <imageReference key="image" image="arrow.left" catalog="system" symbolScale="large"/>
+                    </state>
+                    <connections>
+                        <action selector="buttonBack:" destination="-1" eventType="touchUpInside" id="KKV-Pd-ImS"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Uay-kJ-65D" secondAttribute="bottom" constant="34" id="5Ei-PL-QcU"/>
+                <constraint firstAttribute="trailing" secondItem="6cL-uj-yNI" secondAttribute="trailing" constant="243" id="9gF-gz-MKk"/>
+                <constraint firstItem="LtD-6H-Ucb" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="55" id="MAs-ia-6ZM"/>
+                <constraint firstItem="nyK-V0-c5w" firstAttribute="leading" secondItem="LtD-6H-Ucb" secondAttribute="trailing" constant="3" id="S8l-Ht-czd"/>
+                <constraint firstItem="6cL-uj-yNI" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="20" symbolic="YES" id="SFr-oM-6WY"/>
+                <constraint firstItem="LtD-6H-Ucb" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="22" id="TzL-cD-y6b"/>
+                <constraint firstItem="Uay-kJ-65D" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="UmT-6U-63v"/>
+                <constraint firstAttribute="trailing" secondItem="Uay-kJ-65D" secondAttribute="trailing" id="aWl-5W-dbG"/>
+                <constraint firstItem="Uay-kJ-65D" firstAttribute="top" secondItem="6cL-uj-yNI" secondAttribute="bottom" constant="16" id="agZ-7n-YPI"/>
+                <constraint firstAttribute="trailing" secondItem="nyK-V0-c5w" secondAttribute="trailing" constant="10" id="aqL-bo-CiM"/>
+                <constraint firstItem="nyK-V0-c5w" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="qd3-Gw-S6T"/>
+                <constraint firstItem="6cL-uj-yNI" firstAttribute="top" secondItem="nyK-V0-c5w" secondAttribute="bottom" constant="7" id="tM7-LD-L7M"/>
+                <constraint firstItem="6cL-uj-yNI" firstAttribute="top" secondItem="LtD-6H-Ucb" secondAttribute="bottom" constant="25" id="tRl-L1-R22"/>
+            </constraints>
+            <point key="canvasLocation" x="136.23188405797103" y="139.28571428571428"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrow.left" catalog="system" width="128" height="98"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
